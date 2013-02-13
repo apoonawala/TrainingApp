@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  target_distance: 1
+  actual_distance: 1
+  week: 1
+
+two:
+  name: MyString
+  target_distance: 1
+  actual_distance: 1
+  week: 1

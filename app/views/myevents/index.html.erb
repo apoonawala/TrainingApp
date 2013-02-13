@@ -1,0 +1,23 @@
+<h1>Listing myevents</h1>
+
+<table>
+  <tr>
+    <th>Athlete</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @myevents.each do |myevent| %>
+  <tr>
+    <td><%= myevent.athlete_id %></td>
+    <td><%= link_to 'Show', myevent %></td>
+    <td><%= link_to 'Edit', edit_myevent_path(myevent) %></td>
+    <td><%= link_to 'Destroy', myevent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Myevent', new_myevent_path %>
